@@ -1,50 +1,120 @@
-# Chess setup
-
----
-
-## What is it?
-
-I already set up an SFML project for you! Take it and enjoy! You don't need to know CMake!
-I have added contact information here in the readme 
-To contact me : 
-<h1>
-
-instagram : @atifibrahimabbasi</h1>
-<h1>email : aatiifibrahim@gmail.com</h1>
 
 
+# Chess 2D
 
+![Chess Game](chess_screenshot.png)
 
-<p>Opening the Solution:</p> 
+## Overview
 
-<img src="https://raw.githubusercontent.com/meemknight/photos/master/llge1.gif" width="350">
+Chess 2D is a fully-functional 2D chess game implementation that offers players the complete chess experience with all standard rules and gameplay. This project is developed to provide a clean, user-friendly interface while ensuring adherence to official chess regulations.
 
-Or
+## Features
 
-<img src="https://raw.githubusercontent.com/meemknight/photos/master/llge2.gif" width="500">
+- **Complete Chess Ruleset**: Implements all standard chess rules, including:
+  - Regular piece movements
+  - Castling (Kingside and Queenside)
+  - En passant captures
+  - Pawn promotion
+  - Check and checkmate detection
+  - Stalemate detection
 
-Running the setup
+- **User-Friendly Interface**: Clean, intuitive 2D graphical interface for playing chess
 
-Go to CMakeLists.txt, <kbd>CTRL + S</kbd> to make sure the solution was built.
+- **Game State Management**: 
+  - Save and load games
+  - Track game history
+  - Move validation
 
-Then, from this dropdown select mygame.exe
+- **Additional Features**:
+  - Move highlighting
+  - Legal move suggestions
+  - Game timer support
+  - Captured pieces display
 
-<img src="https://raw.githubusercontent.com/meemknight/photos/master/llge3.gif" width="200">
+## Technologies Used
 
-<kbd>Ctrl + F5</kbd> to build (<kbd>F5</kbd> oppens the debugger, you usually want to press <kbd>Ctrl + F5</kbd> because it oppens faster like this.
+- Programming Language: [Main language used]
+- Graphics/UI Framework: [Framework used]
+- Additional Libraries: [Any notable dependencies]
 
-<p>Adding files:<br>
-You should add .cpp in src/ and .h in include/ Whenever you add a new file CMake will ask you if you want to add that thing, say NO every time! I am already adding all of the things automatically!
-If you accidentally say YES, just remove that file from the CMake.lists
-</p>
+## Installation
 
-<p>Refreshing your changes:<br>
-After you add a file, the changes should be automatically added but if you want to be sure, you can refresh changes by saving the CMake file. If you want to make a hard refresh (you might have to do that sometimes) close Visual Studio, delete the out folder, reopen VS, <kbd>CTRL + S</kbd> on CMakeLists.txt</p>
+```bash
+# Clone the repository
+git clone https://github.com/atifibrahim7/Chess-2d-private.git
 
+# Navigate to the project directory
+cd Chess-2d-private
 
-# IMPORTANT!
-  To ship the game: 
-  In Cmakelists.txt, set the PRODUCTION_BUILD flag to ON to build a shippable version of your game. This will change the file paths to be relative to your exe (RESOURCES_PATH macro), will remove the console, and also will change the asserts to not allow people to debug them. To make sure the changes take effect I recommend deleting the out folder to make a new clean build!
+# Install dependencies (if applicable)
+[commands for installation]
 
+# Run the game
+[command to start the game]
+```
 
-  Also, if you read the CMAKE, even if you don't know CMAKE you should understand what happens with the comments there and you can add libraries and also remove the console from there if you need to! (there is a commented line for that!)
+## How to Play
+
+1. Launch the game using the instructions above
+2. The game starts with white's turn
+3. Click on a piece to select it
+4. Legal moves will be highlighted on the board
+5. Click on a highlighted square to move the selected piece
+6. Game continues until checkmate or stalemate occurs
+
+## Controls
+
+- **Mouse**: Select and move pieces
+- **[Key]**: [Function]
+- **[Key]**: [Function]
+
+## Development
+
+### Project Structure
+
+```
+Chess-2d-private/
+├── [main source directory]/
+│   ├── [files categorized by function]
+├── [assets directory]/
+│   ├── [image files]
+│   └── [sound files]
+├── [additional directories]
+```
+
+### Building from Source
+
+[Instructions for building the project from source]
+
+## Future Enhancements
+
+- AI opponent with multiple difficulty levels
+- Online multiplayer functionality
+- Tournament mode
+- Game analysis tools
+- Themes and customization options
+
+## Contributing
+
+Contributions to the Chess 2D project are welcome! Please follow these steps:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the [License Type] - see the LICENSE file for details.
+
+## Acknowledgements
+
+- [Any resources, tutorials, or inspirations you'd like to acknowledge]
+- [Credits for any assets used]
+- [Special thanks]
+
+## Contact
+
+Atif Ibrahim - [Your contact information]
+Project Link: [https://github.com/atifibrahim7/Chess-2d-private](https://github.com/atifibrahim7/Chess-2d-private)
